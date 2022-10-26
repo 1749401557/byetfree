@@ -12,9 +12,7 @@ $('.cli li').click(function() {
     }
 });
 
- if (/Android|webOS|iPhone|iPad|BlackBerry/i.test(navigator.userAgent)==false){
-     window.location.href = "https://jq.qq.com/?_wv=1027&k=DEou1cHS";
- } 
+
 
  document.onkeydown = function () {
      if (window.event && window.event.keyCode == 123) {
