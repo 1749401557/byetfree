@@ -72,7 +72,7 @@ function jcyh($code){
     $url = 'https://api.weixin.qq.com/sns/jscode2session?appid=wxd4f3764a267fa45a&secret=f8bf9cd2f894fa69c69c5f38eb6b568f&js_code='.$code.'&grant_type=authorization_code';
     $jg = zhuan($url);
     $jg =$jg['openid'];
-    $link = mysqli_connect('localhost','数据库名','数据库密码','数据库名');
+    $link = mysqli_connect('23.224.138.56','ssssss','123456','ssssss');
     if(!$link){
         exit('连接失败！');
     }
@@ -94,7 +94,7 @@ function login($code,$name,$tx){
     $url = 'https://api.weixin.qq.com/sns/jscode2session?appid=wxd4f3764a267fa45a&secret=f8bf9cd2f894fa69c69c5f38eb6b568f&js_code='.$code.'&grant_type=authorization_code';
     $jg = zhuan($url);
     $jg =$jg['openid'];
-    $link = mysqli_connect('localhost','数据库名','数据库密码','数据库名');
+    $link = mysqli_connect('23.224.138.56','ssssss','123456','ssssss');
     if(!$link){
         exit('连接失败！');
     }
@@ -115,7 +115,7 @@ function login($code,$name,$tx){
 }
 
 function xly($jg,$mm,$nr){
-    $link = mysqli_connect('localhost','数据库名','数据库密码','数据库名');
+    $link = mysqli_connect('23.224.138.56','ssssss','123456','ssssss');
     if(!$link){
         exit('连接失败！');
     }
@@ -143,7 +143,7 @@ function xly($jg,$mm,$nr){
     
 }
 function xly2($mm,$nr){
-    $link = mysqli_connect('localhost','数据库名','数据库密码','数据库名');
+    $link = mysqli_connect('23.224.138.56','ssssss','123456','ssssss');
     if(!$link){
         exit('连接失败！');
     }
@@ -167,7 +167,7 @@ function xly2($mm,$nr){
 }
 
 function hf($openid,$hfnr,$hfid,$hfdxname,$hfdxmm){
-    $link = mysqli_connect('localhost','数据库名','数据库密码','数据库名');
+    $link = mysqli_connect('23.224.138.56','ssssss','123456','ssssss');
     if(!$link){
         exit('连接失败！');
     }
@@ -199,7 +199,7 @@ function cly2($mm,$p){
         echo '请输入查询口令';
         die;
     }
-    $link = mysqli_connect('localhost','数据库名','数据库密码','数据库名');
+    $link = mysqli_connect('23.224.138.56','ssssss','123456','ssssss');
     if(!$link){
         exit('连接失败！');
     }
@@ -258,7 +258,7 @@ function cly($mm,$p){
         echo '请输入查询口令';
         die;
     }
-    $link = mysqli_connect('localhost','数据库名','数据库密码','数据库名');
+    $link = mysqli_connect('23.224.138.56','ssssss','123456','ssssss');
     if(!$link){
         exit('连接失败！');
     }
@@ -286,7 +286,7 @@ function cly($mm,$p){
 	echo json_encode($fh);die;
 }
 function zan($id){
-    $link = mysqli_connect('localhost','数据库名','数据库密码','数据库名');
+    $link = mysqli_connect('23.224.138.56','ssssss','123456','ssssss');
     if(!$link){
         exit('连接失败！');
     }
@@ -309,7 +309,7 @@ function zan($id){
 	
 }
 function jzan($id){
-    $link = mysqli_connect('localhost','数据库名','数据库密码','数据库名');
+    $link = mysqli_connect('23.224.138.56','ssssss','123456','ssssss');
     if(!$link){
         exit('连接失败！');
     }
@@ -332,7 +332,7 @@ function jzan($id){
 	
 }
 function hfzan($id){
-    $link = mysqli_connect('localhost','数据库名','数据库密码','数据库名');
+    $link = mysqli_connect('23.224.138.56','ssssss','123456','ssssss');
     if(!$link){
         exit('连接失败！');
     }
@@ -355,7 +355,7 @@ function hfzan($id){
 	
 }
 function hfjzan($id){
-    $link = mysqli_connect('localhost','数据库名','数据库密码','数据库名');
+    $link = mysqli_connect('23.224.138.56','ssssss','123456','ssssss');
     if(!$link){
         exit('连接失败！');
     }
@@ -378,7 +378,7 @@ function hfjzan($id){
 	
 }
 function schf($id){
-    $link = mysqli_connect('localhost','数据库名','数据库密码','数据库名');
+    $link = mysqli_connect('23.224.138.56','ssssss','123456','ssssss');
     if(!$link){
         exit('连接失败！');
     }
@@ -394,7 +394,7 @@ function schf($id){
     }
 }
 function sc($id){
-    $link = mysqli_connect('localhost','数据库名','数据库密码','数据库名');
+    $link = mysqli_connect('23.224.138.56','ssssss','123456','ssssss');
     if(!$link){
         exit('连接失败！');
     }
