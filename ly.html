@@ -1,18 +1,149 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-<meta charset="UTF-8">
-<title> 简单的网页留言板 </title>
-<script type="text/javascript" src="js/index.js"></script>
+<html style="font-size: 110.4px;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <title>陪我过冬</title>
+    <link href="./css/1.css" rel="stylesheet">
+    <link href="./css/2.css" rel="stylesheet">
+    <link href="./css/3.css" rel="stylesheet">
 </head>
+<style>
+    button{
+        transition: all ease 800ms !important;
+        /* background-image: linear-gradient(160deg, #0093e9, #80d0c7); */
+        background: url(./img/bg.gif) repeat #0a0a0a !important;
+            color: #fff !important;
+            border-radius: 5px !important; 
+            /* box-shadow: 0 2px rgba(0, 147, 233, 0.28); */
+    }
+    .van-cell{
+    padding: 14px 16px !important;
+    line-height: inherit !important;
+}
+    button:hover {
+            background-color: #fff;
+            color: #1aab8a;
+        }
+    .select{
+        color: #517fa4;
+    }
+    .cccc{
+        color: #000000;
+    }
+</style>
+<!-- background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);     -->
 <body>
-<h1> 简单的网页留言板 </h1>
-<textarea id="dome" cols="60" rows="10"></textarea>
-<br/>
-<input type="button" value="保存" onclick="saveStorage ('dome');">
-<input type="button" value="清空" onclick="clearStorage ('msg');">
-<input type="button" value="读取" onclick="loadStorage ('msg');">
-<hr>
-<p id="msg"></p>
+
+    <div id="app" style="background: url(./img/bg.gif) repeat #0a0a0a !important;"> 
+        <div class="cx">
+            <!-- 查询页面 -->
+            <div data-v-369849a0="" class="box">
+                <div data-v-369849a0="" class="content">
+                    <div data-v-369849a0="" class="title">陪我过冬</div>
+                    <div data-v-369849a0="" class="wrapp">
+                        <div data-v-369849a0="" class="item">
+                            <div data-v-369849a0="" class="name">留言密码</div>
+                            <div data-v-369849a0="" class="right">
+                                <div data-v-369849a0="" class="van-cell van-field">
+                                    <div class="van-cell__value van-cell__value--alone van-field__value">
+                                        <div class="van-field__body"><input type="text" placeholder="请输入密码查询"
+                                                class="van-field__control"></div>
+                                    </div>
+                                </div> <i data-v-369849a0="" class="van-icon van-icon-eye-o">
+                                    <!---->
+                                </i>
+                                <!---->
+                            </div>
+                        </div> <button id='cly' data-v-369849a0=""
+                            class="b van-button van-button--primary van-button--normal van-button--block">
+                            <div data-v-369849a0="" class="van-button__content">
+                                <span class="van-button__text">查看留言</span>
+                            </div>
+                        </button>
+                        <div id='lynr'>
+                            <div data-v-369849a0="" class="item" >
+                                <div data-v-369849a0="" class="name">留言</div>
+                                <div data-v-369849a0="" class="right">
+                             
+                                    <div data-v-369849a0="" class="empty"><span data-v-369849a0="">暂无留言～</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <div data-v-369849a0="" class="c aaaa"><a href="https://mp.weixin.qq.com/s/NIVDFutw-ms3fI5jh7pfaA" style="color:white;">@陪我过冬</a></div>
+                </div>
+            </div>
+            <!-- 留言页面 -->
+            <div style="display: none;"  data-v-085f7fa4="" class="box">
+                <div data-v-085f7fa4="" class="content">
+                    <div data-v-085f7fa4="" class="title">留言信箱</div>
+                    <div data-v-085f7fa4="" class="wrapp">
+                        <div data-v-085f7fa4="" class="item">
+                            <div data-v-085f7fa4="" class="name" style="padding-top: 14px;line-height: inherit;">留言密码</div>
+                            <div data-v-085f7fa4="" class="right">
+                                <div data-v-085f7fa4="" class="van-cell van-field">
+                                    <div class="van-cell__value van-cell__value--alone van-field__value">
+                                        <div class="van-field__body"><input  type="text" placeholder="汉字 英文 数字"
+                                                class="van-field__control"></div>
+                                    </div>
+                                </div> <i data-v-085f7fa4="" class="van-icon van-icon-eye-o">
+                                    <!---->
+                                </i>
+                                <!---->
+                            </div>
+                        </div>
+                        <div data-v-085f7fa4="" class="item" style="border-bottom: none;height: 200px;">
+                            <div style="padding-top: 14px;line-height: inherit;"  data-v-085f7fa4="" class="name">留言内容</div>
+                            <div data-v-085f7fa4="" class="right">
+                                <div style="padding: 14px 16px;height: 100%;" data-v-085f7fa4="" class="van-cell van-field">
+                                    <div  class="van-cell__value van-cell__value--alone van-field__value" style="height: 100%;">
+                                        <div class="van-field__body" style="height: 100%;"><textarea style='height: 100%;' rows="3" placeholder="这一秒 只想在爱里沉溺..." class="van-field__control" style="height: 72px;"></textarea></div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <button id="xly" data-v-085f7fa4=""
+                            class="b van-button van-button--primary van-button--normal van-button--block">
+                            <div data-v-085f7fa4="" class="van-button__content"><span data-v-085f7fa4=""
+                                    class="van-button__text">发送给Ta</span></div>
+                        </button>
+                    </div>
+<div data-v-369849a0="" class="c aaaa"><a href="https://mp.weixin.qq.com/s/NIVDFutw-ms3fI5jh7pfaA" style="color:white;">源码分享交流群：138723724</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer" style="height:60px;position: fixed;bottom: 0px;left: 0;width: 100%;">
+            <ul style="height:60px" class="cli van-hairline--top-bottom van-tabbar van-tabbar--fixed">
+
+                <li class="van-tabbar-item van-tabbar-item--active" >
+                    <div class="van-tabbar-item__icon">
+                        <img src="./img/cx-2.png" class="ccc van-icon van-icon-envelop-o">
+                          
+                        </span>
+                   
+                    </div>
+                    <div class="van-tabbar-item__text">查留言</div>
+                </li>
+                <li class="van-tabbar-item" style="">
+                    <div class="van-tabbar-item__icon">
+                        <img src="./img/sx.png" class="xxx van-icon van-icon-edit">
+                            
+                        </img>
+                        
+                    </div>
+                    <div class="van-tabbar-item__text">写留言</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="lycg" class="van-popup van-popup--top van-notify van-notify--success" style="transition-duration: 0.2s; z-index: 2002; display: none;">留言成功</div>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/man.js"></script>
+    <script src="./js/nr.js"></script>
+
+    
 </body>
+
 </html>
